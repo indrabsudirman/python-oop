@@ -13,3 +13,18 @@ class Student:
 Indra = Student("Indra", 20, "Math")
 # Print instance variables
 print(Indra)
+
+class Teacher:
+    def __init__(self, name = None, age = None, subject = None):
+        self.name = name
+        self.age = age
+        self.subject = subject
+    def __str__(self):
+        return str(vars(self))
+
+# Create instance of Teacher with default values
+Bayu = Teacher()
+# Print instance variables
+print(Bayu)
+Ibayu = Teacher("Ibayu", 20, "Math")
+print(Ibayu)
